@@ -1,0 +1,2068 @@
+[
+  {
+    "id": "action:living-disappears",
+    "label": "Who disappears? Explore lost access",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-disappears"
+  },
+  {
+    "id": "action:living-follow",
+    "label": "Follow one person through the change",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-follow"
+  },
+  {
+    "id": "action:living-multiverse",
+    "label": "Explore the decision multiverse",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-multiverse"
+  },
+  {
+    "id": "action:living-tiny",
+    "label": "Test one tiny change",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-tiny"
+  },
+  {
+    "id": "action:living-break",
+    "label": "Break this decision with explicit disruptions",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-break"
+  },
+  {
+    "id": "action:living-constellation",
+    "label": "Explore constraint constellations",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-constellation"
+  },
+  {
+    "id": "action:living-replay",
+    "label": "Replay captured model runs",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-replay"
+  },
+  {
+    "id": "action:new",
+    "label": "Create a room",
+    "category": "Workspace",
+    "type": "action",
+    "key": "new"
+  },
+  {
+    "id": "action:new-empty",
+    "label": "Start an empty room",
+    "category": "Workspace",
+    "type": "action",
+    "key": "new-empty"
+  },
+  {
+    "id": "action:rooms",
+    "label": "Browse device rooms",
+    "category": "Workspace",
+    "type": "action",
+    "key": "rooms"
+  },
+  {
+    "id": "action:metadata",
+    "label": "Rename and describe a room",
+    "category": "Workspace",
+    "type": "action",
+    "key": "metadata"
+  },
+  {
+    "id": "action:duplicate-room",
+    "label": "Duplicate the complete room",
+    "category": "Workspace",
+    "type": "action",
+    "key": "duplicate-room"
+  },
+  {
+    "id": "action:local-save",
+    "label": "Save device workspace now",
+    "category": "Workspace",
+    "type": "action",
+    "key": "local-save"
+  },
+  {
+    "id": "action:undo",
+    "label": "Undo a workspace change",
+    "category": "Workspace",
+    "type": "action",
+    "key": "undo"
+  },
+  {
+    "id": "action:redo",
+    "label": "Redo an undone change",
+    "category": "Workspace",
+    "type": "action",
+    "key": "redo"
+  },
+  {
+    "id": "action:reset-policy",
+    "label": "Reset proposed conditions",
+    "category": "Workspace",
+    "type": "action",
+    "key": "reset-policy"
+  },
+  {
+    "id": "action:baseline-editor",
+    "label": "Edit current conditions",
+    "category": "Workspace",
+    "type": "action",
+    "key": "baseline-editor"
+  },
+  {
+    "id": "action:baseline-from-policy",
+    "label": "Promote proposal to baseline",
+    "category": "Workspace",
+    "type": "action",
+    "key": "baseline-from-policy"
+  },
+  {
+    "id": "action:export-json",
+    "label": "Export full portable backup",
+    "category": "Data",
+    "type": "action",
+    "key": "export-json"
+  },
+  {
+    "id": "action:export-anonymous",
+    "label": "Export anonymised backup",
+    "category": "Data",
+    "type": "action",
+    "key": "export-anonymous"
+  },
+  {
+    "id": "action:import",
+    "label": "Import room JSON or resident CSV",
+    "category": "Data",
+    "type": "action",
+    "key": "import"
+  },
+  {
+    "id": "action:csv-template",
+    "label": "Download resident CSV template",
+    "category": "Data",
+    "type": "action",
+    "key": "csv-template"
+  },
+  {
+    "id": "action:people-export",
+    "label": "Export resident constraints",
+    "category": "Data",
+    "type": "action",
+    "key": "people-export"
+  },
+  {
+    "id": "action:outcomes-export",
+    "label": "Export resident-day outcomes",
+    "category": "Data",
+    "type": "action",
+    "key": "outcomes-export"
+  },
+  {
+    "id": "action:metrics-export",
+    "label": "Export every analytic measure",
+    "category": "Data",
+    "type": "action",
+    "key": "metrics-export"
+  },
+  {
+    "id": "action:groups-export",
+    "label": "Export group access comparison",
+    "category": "Data",
+    "type": "action",
+    "key": "groups-export"
+  },
+  {
+    "id": "action:bottleneck-export",
+    "label": "Export first-barrier counts",
+    "category": "Data",
+    "type": "action",
+    "key": "bottleneck-export"
+  },
+  {
+    "id": "action:alternative-export",
+    "label": "Export alternative results",
+    "category": "Data",
+    "type": "action",
+    "key": "alternative-export"
+  },
+  {
+    "id": "action:sensitivity-export",
+    "label": "Export closing-time sensitivity",
+    "category": "Data",
+    "type": "action",
+    "key": "sensitivity-export"
+  },
+  {
+    "id": "action:comparison-export",
+    "label": "Export scenario comparison",
+    "category": "Data",
+    "type": "action",
+    "key": "comparison-export"
+  },
+  {
+    "id": "action:comparison-json",
+    "label": "Export scenario archive",
+    "category": "Data",
+    "type": "action",
+    "key": "comparison-json"
+  },
+  {
+    "id": "action:evidence-export",
+    "label": "Export evidence and discussion",
+    "category": "Data",
+    "type": "action",
+    "key": "evidence-export"
+  },
+  {
+    "id": "action:policy-export",
+    "label": "Export current and proposed settings",
+    "category": "Data",
+    "type": "action",
+    "key": "policy-export"
+  },
+  {
+    "id": "action:methods-export",
+    "label": "Download calculation method",
+    "category": "Data",
+    "type": "action",
+    "key": "methods-export"
+  },
+  {
+    "id": "action:preferences-export",
+    "label": "Export your preferences",
+    "category": "Data",
+    "type": "action",
+    "key": "preferences-export"
+  },
+  {
+    "id": "action:capabilities-export",
+    "label": "Export tool inventory",
+    "category": "Data",
+    "type": "action",
+    "key": "capabilities-export"
+  },
+  {
+    "id": "action:chart-svg",
+    "label": "Export availability chart as SVG",
+    "category": "Charts",
+    "type": "action",
+    "key": "chart-svg"
+  },
+  {
+    "id": "action:chart-png",
+    "label": "Export availability chart as PNG",
+    "category": "Charts",
+    "type": "action",
+    "key": "chart-png"
+  },
+  {
+    "id": "action:ripple-svg",
+    "label": "Export ripple relationship diagram",
+    "category": "Charts",
+    "type": "action",
+    "key": "ripple-svg"
+  },
+  {
+    "id": "action:chart-timeline",
+    "label": "Explore availability timeline",
+    "category": "Charts",
+    "type": "action",
+    "key": "chart-timeline"
+  },
+  {
+    "id": "action:chart-map",
+    "label": "Explore relationship ripples",
+    "category": "Charts",
+    "type": "action",
+    "key": "chart-map"
+  },
+  {
+    "id": "action:chart-groups",
+    "label": "Explore group reach bars",
+    "category": "Charts",
+    "type": "action",
+    "key": "chart-groups"
+  },
+  {
+    "id": "action:toggle-rows",
+    "label": "Expand / collapse timeline observations",
+    "category": "Charts",
+    "type": "action",
+    "key": "toggle-rows"
+  },
+  {
+    "id": "action:add-person",
+    "label": "Add anonymous resident constraints",
+    "category": "Residents",
+    "type": "action",
+    "key": "add-person"
+  },
+  {
+    "id": "action:bulk-edit",
+    "label": "Bulk-update matching constraints",
+    "category": "Residents",
+    "type": "action",
+    "key": "bulk-edit"
+  },
+  {
+    "id": "action:person-layout",
+    "label": "Switch resident cards / table",
+    "category": "Residents",
+    "type": "action",
+    "key": "person-layout"
+  },
+  {
+    "id": "action:clear-filters",
+    "label": "Reset resident filters",
+    "category": "Residents",
+    "type": "action",
+    "key": "clear-filters"
+  },
+  {
+    "id": "action:filter-lost",
+    "label": "Find residents losing access",
+    "category": "Residents",
+    "type": "action",
+    "key": "filter-lost"
+  },
+  {
+    "id": "action:filter-gained",
+    "label": "Find residents gaining access",
+    "category": "Residents",
+    "type": "action",
+    "key": "filter-gained"
+  },
+  {
+    "id": "action:filter-unknown",
+    "label": "Find missing availability",
+    "category": "Residents",
+    "type": "action",
+    "key": "filter-unknown"
+  },
+  {
+    "id": "action:sort-impact",
+    "label": "Prioritise affected profiles",
+    "category": "Residents",
+    "type": "action",
+    "key": "sort-impact"
+  },
+  {
+    "id": "action:snapshot",
+    "label": "Capture a named scenario",
+    "category": "Scenarios",
+    "type": "action",
+    "key": "snapshot"
+  },
+  {
+    "id": "action:clear-scenarios",
+    "label": "Remove saved snapshots",
+    "category": "Scenarios",
+    "type": "action",
+    "key": "clear-scenarios"
+  },
+  {
+    "id": "action:stress-test",
+    "label": "Test explicit disruptions",
+    "category": "Scenarios",
+    "type": "action",
+    "key": "stress-test"
+  },
+  {
+    "id": "action:add-evidence",
+    "label": "Record a source or assumption",
+    "category": "Evidence",
+    "type": "action",
+    "key": "add-evidence"
+  },
+  {
+    "id": "action:add-note",
+    "label": "Record a discussion or next step",
+    "category": "Evidence",
+    "type": "action",
+    "key": "add-note"
+  },
+  {
+    "id": "action:print",
+    "label": "Print or save a PDF brief",
+    "category": "Reports",
+    "type": "action",
+    "key": "print"
+  },
+  {
+    "id": "action:report-html",
+    "label": "Export a standalone HTML brief",
+    "category": "Reports",
+    "type": "action",
+    "key": "report-html"
+  },
+  {
+    "id": "action:report-markdown",
+    "label": "Export a Markdown brief",
+    "category": "Reports",
+    "type": "action",
+    "key": "report-markdown"
+  },
+  {
+    "id": "action:report-copy",
+    "label": "Copy plain-language summary",
+    "category": "Reports",
+    "type": "action",
+    "key": "report-copy"
+  },
+  {
+    "id": "action:share",
+    "label": "Create an aggregate snapshot link",
+    "category": "Reports",
+    "type": "action",
+    "key": "share"
+  },
+  {
+    "id": "action:report-settings",
+    "label": "Choose report sections",
+    "category": "Reports",
+    "type": "action",
+    "key": "report-settings"
+  },
+  {
+    "id": "action:report-defaults",
+    "label": "Restore report defaults",
+    "category": "Reports",
+    "type": "action",
+    "key": "report-defaults"
+  },
+  {
+    "id": "action:settings",
+    "label": "Customise appearance and accessibility",
+    "category": "Preferences",
+    "type": "action",
+    "key": "settings"
+  },
+  {
+    "id": "action:reset-prefs",
+    "label": "Restore interface defaults",
+    "category": "Preferences",
+    "type": "action",
+    "key": "reset-prefs"
+  },
+  {
+    "id": "action:account",
+    "label": "Cloud account and connection",
+    "category": "Cloud",
+    "type": "action",
+    "key": "account"
+  },
+  {
+    "id": "action:cloud-save",
+    "label": "Save explicit private cloud copy",
+    "category": "Cloud",
+    "type": "action",
+    "key": "cloud-save"
+  },
+  {
+    "id": "action:cloud-rooms",
+    "label": "Browse private cloud copies",
+    "category": "Cloud",
+    "type": "action",
+    "key": "cloud-rooms"
+  },
+  {
+    "id": "action:signout",
+    "label": "Sign out on this device",
+    "category": "Cloud",
+    "type": "action",
+    "key": "signout"
+  },
+  {
+    "id": "action:guide",
+    "label": "Read the five-step field guide",
+    "category": "Help",
+    "type": "action",
+    "key": "guide"
+  },
+  {
+    "id": "action:methods",
+    "label": "Inspect calculation method",
+    "category": "Help",
+    "type": "action",
+    "key": "methods"
+  },
+  {
+    "id": "action:privacy",
+    "label": "Read data and sharing practices",
+    "category": "Help",
+    "type": "action",
+    "key": "privacy"
+  },
+  {
+    "id": "action:accessibility",
+    "label": "Read accessibility controls",
+    "category": "Help",
+    "type": "action",
+    "key": "accessibility"
+  },
+  {
+    "id": "action:capabilities",
+    "label": "Browse tools and analytic measures",
+    "category": "Help",
+    "type": "action",
+    "key": "capabilities"
+  },
+  {
+    "id": "action:install",
+    "label": "Install home-screen shortcut",
+    "category": "Workspace",
+    "type": "action",
+    "key": "install"
+  },
+  {
+    "id": "metric:profiles",
+    "label": "Resident profiles",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "profiles"
+  },
+  {
+    "id": "metric:observations",
+    "label": "Resident-day observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "observations"
+  },
+  {
+    "id": "metric:known",
+    "label": "Complete observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "known"
+  },
+  {
+    "id": "metric:unknown",
+    "label": "Unknown outcomes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "unknown"
+  },
+  {
+    "id": "metric:population",
+    "label": "Represented resident visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "population"
+  },
+  {
+    "id": "metric:served",
+    "label": "Proposed access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "served"
+  },
+  {
+    "id": "metric:baselineServed",
+    "label": "Current access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineServed"
+  },
+  {
+    "id": "metric:excluded",
+    "label": "Proposed exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "excluded"
+  },
+  {
+    "id": "metric:lost",
+    "label": "Access lost",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "lost"
+  },
+  {
+    "id": "metric:gained",
+    "label": "Access gained",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "gained"
+  },
+  {
+    "id": "metric:reach",
+    "label": "Proposed reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "reach"
+  },
+  {
+    "id": "metric:baseReach",
+    "label": "Current reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baseReach"
+  },
+  {
+    "id": "metric:net",
+    "label": "Net access change",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "net"
+  },
+  {
+    "id": "metric:windowMinutes",
+    "label": "Available window minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "windowMinutes"
+  },
+  {
+    "id": "metric:baselineWindowMinutes",
+    "label": "Current window minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineWindowMinutes"
+  },
+  {
+    "id": "metric:scheduledMinutes",
+    "label": "Allocated session minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "scheduledMinutes"
+  },
+  {
+    "id": "metric:baselineScheduledMinutes",
+    "label": "Current allocated minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineScheduledMinutes"
+  },
+  {
+    "id": "metric:requestedMinutes",
+    "label": "Requested session minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "requestedMinutes"
+  },
+  {
+    "id": "metric:unmetMinutes",
+    "label": "Unmet session minutes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "unmetMinutes"
+  },
+  {
+    "id": "metric:averageWindow",
+    "label": "Mean available window",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "averageWindow"
+  },
+  {
+    "id": "metric:medianWindow",
+    "label": "Median available window",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "medianWindow"
+  },
+  {
+    "id": "metric:minWindow",
+    "label": "Shortest available window",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "minWindow"
+  },
+  {
+    "id": "metric:maxWindow",
+    "label": "Longest available window",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "maxWindow"
+  },
+  {
+    "id": "metric:averageSession",
+    "label": "Mean allocated session",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "averageSession"
+  },
+  {
+    "id": "metric:medianSession",
+    "label": "Median allocated session",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "medianSession"
+  },
+  {
+    "id": "metric:averageTravel",
+    "label": "Mean round-trip travel",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "averageTravel"
+  },
+  {
+    "id": "metric:completeness",
+    "label": "Availability completeness",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "completeness"
+  },
+  {
+    "id": "metric:equityGap",
+    "label": "Group reach gap",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "equityGap"
+  },
+  {
+    "id": "metric:minGroupReach",
+    "label": "Lowest group reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "minGroupReach"
+  },
+  {
+    "id": "metric:maxGroupReach",
+    "label": "Highest group reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "maxGroupReach"
+  },
+  {
+    "id": "metric:openingHours",
+    "label": "Proposed daily opening",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "openingHours"
+  },
+  {
+    "id": "metric:baselineOpeningHours",
+    "label": "Current daily opening",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineOpeningHours"
+  },
+  {
+    "id": "metric:hoursChange",
+    "label": "Daily opening change",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "hoursChange"
+  },
+  {
+    "id": "metric:operatingCost",
+    "label": "Estimated proposed operating cost",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "operatingCost"
+  },
+  {
+    "id": "metric:baselineCost",
+    "label": "Estimated current operating cost",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineCost"
+  },
+  {
+    "id": "metric:seatHours",
+    "label": "Available seat-hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "seatHours"
+  },
+  {
+    "id": "metric:computerHours",
+    "label": "Available computer-hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerHours"
+  },
+  {
+    "id": "metric:activeGroups",
+    "label": "Represented groups",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "activeGroups"
+  },
+  {
+    "id": "metric:activeDays",
+    "label": "Days in this run",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "activeDays"
+  },
+  {
+    "id": "metric:transitProfiles",
+    "label": "Transit-dependent observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "transitProfiles"
+  },
+  {
+    "id": "metric:computerProfiles",
+    "label": "Computer-dependent observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerProfiles"
+  },
+  {
+    "id": "metric:accessProfiles",
+    "label": "Step-free-dependent observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "accessProfiles"
+  },
+  {
+    "id": "metric:careProfiles",
+    "label": "Accompanying-child observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "careProfiles"
+  },
+  {
+    "id": "metric:wifiProfiles",
+    "label": "Internet-dependent observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "wifiProfiles"
+  },
+  {
+    "id": "metric:quietProfiles",
+    "label": "Quiet-space observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "quietProfiles"
+  },
+  {
+    "id": "metric:highPriority",
+    "label": "Priority observations",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "highPriority"
+  },
+  {
+    "id": "metric:representedResidents",
+    "label": "Residents represented",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "representedResidents"
+  },
+  {
+    "id": "metric:blockedProfiles",
+    "label": "Excluded profile visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "blockedProfiles"
+  },
+  {
+    "id": "metric:servedProfiles",
+    "label": "Served profile visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "servedProfiles"
+  },
+  {
+    "id": "metric:lostProfiles",
+    "label": "Lost profile visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "lostProfiles"
+  },
+  {
+    "id": "metric:gainedProfiles",
+    "label": "Gained profile visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "gainedProfiles"
+  },
+  {
+    "id": "metric:unchangedProfiles",
+    "label": "Unchanged profile visits",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "unchangedProfiles"
+  },
+  {
+    "id": "metric:earliestArrival",
+    "label": "Earliest effective arrival",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "earliestArrival"
+  },
+  {
+    "id": "metric:latestDeparture",
+    "label": "Latest effective departure",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "latestDeparture"
+  },
+  {
+    "id": "metric:costChange",
+    "label": "Estimated operating cost change",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "costChange"
+  },
+  {
+    "id": "metric:costPerServed",
+    "label": "Estimated cost per served visit",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "costPerServed"
+  },
+  {
+    "id": "metric:hoursLost",
+    "label": "Allocated hours lost",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "hoursLost"
+  },
+  {
+    "id": "metric:seatUtilisation",
+    "label": "Modelled seat utilisation",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "seatUtilisation"
+  },
+  {
+    "id": "metric:computerUtilisation",
+    "label": "Modelled computer utilisation",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerUtilisation"
+  },
+  {
+    "id": "metric:reachChange",
+    "label": "Reach change",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "reachChange"
+  },
+  {
+    "id": "metric:exclusionRate",
+    "label": "Exclusion rate",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "exclusionRate"
+  },
+  {
+    "id": "metric:lossRate",
+    "label": "Share of current access lost",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "lossRate"
+  },
+  {
+    "id": "metric:gainRate",
+    "label": "Share gaining access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "gainRate"
+  },
+  {
+    "id": "metric:unmetRate",
+    "label": "Share of session demand unmet",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "unmetRate"
+  },
+  {
+    "id": "metric:scheduledHours",
+    "label": "Allocated session hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "scheduledHours"
+  },
+  {
+    "id": "metric:baselineScheduledHours",
+    "label": "Current allocated hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineScheduledHours"
+  },
+  {
+    "id": "metric:windowHours",
+    "label": "Available window hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "windowHours"
+  },
+  {
+    "id": "metric:baselineWindowHours",
+    "label": "Current available hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineWindowHours"
+  },
+  {
+    "id": "metric:requestedHours",
+    "label": "Requested session hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "requestedHours"
+  },
+  {
+    "id": "metric:unmetHours",
+    "label": "Unmet session hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "unmetHours"
+  },
+  {
+    "id": "metric:costSavings",
+    "label": "Estimated operating savings",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "costSavings"
+  },
+  {
+    "id": "metric:travelExposure",
+    "label": "Travel-cost exposure if excluded visits still travel",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "travelExposure"
+  },
+  {
+    "id": "metric:carbonExposure",
+    "label": "Trip-emission exposure if excluded visits still travel",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "carbonExposure"
+  },
+  {
+    "id": "metric:totalStaffHours",
+    "label": "Supplied staff-hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "totalStaffHours"
+  },
+  {
+    "id": "metric:computersPerResident",
+    "label": "Computers per represented visit",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computersPerResident"
+  },
+  {
+    "id": "metric:seatsPerResident",
+    "label": "Seats per represented visit",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "seatsPerResident"
+  },
+  {
+    "id": "metric:averageWeight",
+    "label": "Mean representation weight",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "averageWeight"
+  },
+  {
+    "id": "metric:medianWeight",
+    "label": "Median representation weight",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "medianWeight"
+  },
+  {
+    "id": "metric:missingArrival",
+    "label": "Missing arrival times",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "missingArrival"
+  },
+  {
+    "id": "metric:missingDeadline",
+    "label": "Missing departure times",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "missingDeadline"
+  },
+  {
+    "id": "metric:missingDuration",
+    "label": "Missing session lengths",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "missingDuration"
+  },
+  {
+    "id": "metric:evidenceCoverage",
+    "label": "Profiles with a source label",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "evidenceCoverage"
+  },
+  {
+    "id": "metric:transitReach",
+    "label": "Transit-dependent reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "transitReach"
+  },
+  {
+    "id": "metric:transitExcluded",
+    "label": "Transit-dependent exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "transitExcluded"
+  },
+  {
+    "id": "metric:transitServed",
+    "label": "Transit-dependent access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "transitServed"
+  },
+  {
+    "id": "metric:computerReach",
+    "label": "Computer-dependent reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerReach"
+  },
+  {
+    "id": "metric:computerExcluded",
+    "label": "Computer-dependent exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerExcluded"
+  },
+  {
+    "id": "metric:computerServed",
+    "label": "Computer-dependent access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "computerServed"
+  },
+  {
+    "id": "metric:accessReach",
+    "label": "Step-free-dependent reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "accessReach"
+  },
+  {
+    "id": "metric:accessExcluded",
+    "label": "Step-free-dependent exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "accessExcluded"
+  },
+  {
+    "id": "metric:accessServed",
+    "label": "Step-free-dependent access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "accessServed"
+  },
+  {
+    "id": "metric:careReach",
+    "label": "Accompanying-child reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "careReach"
+  },
+  {
+    "id": "metric:careExcluded",
+    "label": "Accompanying-child exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "careExcluded"
+  },
+  {
+    "id": "metric:careServed",
+    "label": "Accompanying-child access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "careServed"
+  },
+  {
+    "id": "metric:wifiReach",
+    "label": "Internet-dependent reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "wifiReach"
+  },
+  {
+    "id": "metric:wifiExcluded",
+    "label": "Internet-dependent exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "wifiExcluded"
+  },
+  {
+    "id": "metric:wifiServed",
+    "label": "Internet-dependent access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "wifiServed"
+  },
+  {
+    "id": "metric:quietReach",
+    "label": "Quiet-space reach",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "quietReach"
+  },
+  {
+    "id": "metric:quietExcluded",
+    "label": "Quiet-space exclusions",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "quietExcluded"
+  },
+  {
+    "id": "metric:quietServed",
+    "label": "Quiet-space access",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "quietServed"
+  },
+  {
+    "id": "metric:estimated",
+    "label": "Estimated-availability outcomes",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "estimated"
+  },
+  {
+    "id": "metric:baselineStaffHours",
+    "label": "Current supplied staff-hours",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineStaffHours"
+  },
+  {
+    "id": "metric:baselineTravelExposure",
+    "label": "Current travel-cost exposure",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineTravelExposure"
+  },
+  {
+    "id": "metric:baselineCarbonExposure",
+    "label": "Current trip-emission exposure",
+    "category": "Analytic measures",
+    "type": "metric",
+    "key": "baselineCarbonExposure"
+  },
+  {
+    "id": "policy:open",
+    "label": "Proposed: Opening time",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "open",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:open",
+    "label": "Current: Opening time",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "open",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:close",
+    "label": "Proposed: Closing time",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "close",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:close",
+    "label": "Current: Closing time",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "close",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:seats",
+    "label": "Proposed: Available seats",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "seats",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:seats",
+    "label": "Current: Available seats",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "seats",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:computers",
+    "label": "Proposed: Computer places",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "computers",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:computers",
+    "label": "Current: Computer places",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "computers",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:minSession",
+    "label": "Proposed: Minimum session",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "minSession",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:minSession",
+    "label": "Current: Minimum session",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "minSession",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:buffer",
+    "label": "Proposed: Travel safety buffer",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "buffer",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:buffer",
+    "label": "Current: Travel safety buffer",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "buffer",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:lastBus",
+    "label": "Proposed: Last bus departure",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "lastBus",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:lastBus",
+    "label": "Current: Last bus departure",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "lastBus",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:extraBus",
+    "label": "Proposed: Later bus allowance",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "extraBus",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:extraBus",
+    "label": "Current: Later bus allowance",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "extraBus",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:lateStart",
+    "label": "Proposed: Arrival disruption",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "lateStart",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:lateStart",
+    "label": "Current: Arrival disruption",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "lateStart",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:travelAdjustment",
+    "label": "Proposed: Extra travel each way",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "travelAdjustment",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:travelAdjustment",
+    "label": "Current: Extra travel each way",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "travelAdjustment",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:sessionAdjustment",
+    "label": "Proposed: Session adjustment",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "sessionAdjustment",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:sessionAdjustment",
+    "label": "Current: Session adjustment",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "sessionAdjustment",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:seatReserve",
+    "label": "Proposed: Reserved seats",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "seatReserve",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:seatReserve",
+    "label": "Current: Reserved seats",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "seatReserve",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:priority",
+    "label": "Proposed: Allocation order",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "priority",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:priority",
+    "label": "Current: Allocation order",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "priority",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:wheelchair",
+    "label": "Proposed: Step-free access",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "wheelchair",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:wheelchair",
+    "label": "Current: Step-free access",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "wheelchair",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:wifi",
+    "label": "Proposed: Internet access",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "wifi",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:wifi",
+    "label": "Current: Internet access",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "wifi",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:power",
+    "label": "Proposed: Power available",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "power",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:power",
+    "label": "Current: Power available",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "power",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:quiet",
+    "label": "Proposed: Quiet space",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "quiet",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:quiet",
+    "label": "Current: Quiet space",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "quiet",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:staff",
+    "label": "Proposed: Staff coverage",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "staff",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:staff",
+    "label": "Current: Staff coverage",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "staff",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:children",
+    "label": "Proposed: Accompanying children",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "children",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:children",
+    "label": "Current: Accompanying children",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "children",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:weekend",
+    "label": "Proposed: Weekend access",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "weekend",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:weekend",
+    "label": "Current: Weekend access",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "weekend",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:costPerHour",
+    "label": "Proposed: Hourly operating cost",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "costPerHour",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:costPerHour",
+    "label": "Current: Hourly operating cost",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "costPerHour",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:travelCost",
+    "label": "Proposed: Return-trip cost",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "travelCost",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:travelCost",
+    "label": "Current: Return-trip cost",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "travelCost",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:staffCount",
+    "label": "Proposed: Staff count",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "staffCount",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:staffCount",
+    "label": "Current: Staff count",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "staffCount",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:staffHours",
+    "label": "Proposed: Staff hours",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "staffHours",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:staffHours",
+    "label": "Current: Staff hours",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "staffHours",
+    "scope": "baseline"
+  },
+  {
+    "id": "policy:carbonPerTrip",
+    "label": "Proposed: Trip emissions assumption",
+    "category": "Decision controls",
+    "type": "field",
+    "key": "carbonPerTrip",
+    "scope": "policy"
+  },
+  {
+    "id": "baseline:carbonPerTrip",
+    "label": "Current: Trip emissions assumption",
+    "category": "Baseline controls",
+    "type": "field",
+    "key": "carbonPerTrip",
+    "scope": "baseline"
+  },
+  {
+    "id": "pref:motion",
+    "label": "Interface motion",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "motion"
+  },
+  {
+    "id": "pref:contrast",
+    "label": "Higher contrast",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "contrast"
+  },
+  {
+    "id": "pref:chartLabels",
+    "label": "Window labels",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartLabels"
+  },
+  {
+    "id": "pref:chartGrid",
+    "label": "Timeline grid",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartGrid"
+  },
+  {
+    "id": "pref:chartBaseline",
+    "label": "Current-situation overlay",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartBaseline"
+  },
+  {
+    "id": "pref:chartAvatars",
+    "label": "Alias initials on charts",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartAvatars"
+  },
+  {
+    "id": "pref:chartAnimation",
+    "label": "Chart transitions",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartAnimation"
+  },
+  {
+    "id": "pref:showUnknown",
+    "label": "Show unknown outcomes",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showUnknown"
+  },
+  {
+    "id": "pref:showRetained",
+    "label": "Show retained access",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showRetained"
+  },
+  {
+    "id": "pref:showExcluded",
+    "label": "Show existing exclusions",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showExcluded"
+  },
+  {
+    "id": "pref:showGained",
+    "label": "Show gained access",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showGained"
+  },
+  {
+    "id": "pref:showLost",
+    "label": "Show lost access",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showLost"
+  },
+  {
+    "id": "pref:showLegend",
+    "label": "Chart legends",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showLegend"
+  },
+  {
+    "id": "pref:showWeights",
+    "label": "Representation weights in profiles",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showWeights"
+  },
+  {
+    "id": "pref:showNotes",
+    "label": "Resident context in cards",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showNotes"
+  },
+  {
+    "id": "pref:showTravel",
+    "label": "Travel columns in resident tables",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showTravel"
+  },
+  {
+    "id": "pref:showMinSession",
+    "label": "Required session on timeline",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showMinSession"
+  },
+  {
+    "id": "pref:showBuffer",
+    "label": "Buffer reminder under charts",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showBuffer"
+  },
+  {
+    "id": "pref:showCapacity",
+    "label": "Capacity reminder under charts",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showCapacity"
+  },
+  {
+    "id": "pref:showDay",
+    "label": "Day labels",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showDay"
+  },
+  {
+    "id": "pref:showGroup",
+    "label": "Group labels",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showGroup"
+  },
+  {
+    "id": "pref:showSource",
+    "label": "Source labels in tables",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "showSource"
+  },
+  {
+    "id": "pref:autoSave",
+    "label": "Automatically save to this device",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "autoSave"
+  },
+  {
+    "id": "pref:keyboard",
+    "label": "Keyboard shortcuts",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "keyboard"
+  },
+  {
+    "id": "pref:confirmDelete",
+    "label": "Confirm removal actions",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "confirmDelete"
+  },
+  {
+    "id": "pref:screenReader",
+    "label": "Expanded text summary under charts",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "screenReader"
+  },
+  {
+    "id": "pref:stickyControls",
+    "label": "Keep decision controls in view",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "stickyControls"
+  },
+  {
+    "id": "pref:tableStriped",
+    "label": "Alternating table rows",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "tableStriped"
+  },
+  {
+    "id": "pref:tableCompact",
+    "label": "Compact tables",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "tableCompact"
+  },
+  {
+    "id": "pref:reduceShadows",
+    "label": "Reduce visual shadows",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "reduceShadows"
+  },
+  {
+    "id": "pref:largeTargets",
+    "label": "Larger button targets",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "largeTargets"
+  },
+  {
+    "id": "pref:focusMode",
+    "label": "Focus on the workspace",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "focusMode"
+  },
+  {
+    "id": "pref:reportPeople",
+    "label": "Include private resident appendix",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportPeople"
+  },
+  {
+    "id": "pref:reportEvidence",
+    "label": "Include evidence ledger",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportEvidence"
+  },
+  {
+    "id": "pref:reportAssumptions",
+    "label": "Include assumptions",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportAssumptions"
+  },
+  {
+    "id": "pref:reportAlternatives",
+    "label": "Include alternatives",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportAlternatives"
+  },
+  {
+    "id": "pref:reportGroups",
+    "label": "Include group comparisons",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportGroups"
+  },
+  {
+    "id": "pref:reportMetrics",
+    "label": "Include headline measures",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportMetrics"
+  },
+  {
+    "id": "pref:reportTimeline",
+    "label": "Include barrier summary",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportTimeline"
+  },
+  {
+    "id": "pref:reportNotes",
+    "label": "Include discussion notes",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportNotes"
+  },
+  {
+    "id": "pref:reportTitle",
+    "label": "Include room title and description",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportTitle"
+  },
+  {
+    "id": "pref:reportFooter",
+    "label": "Include report credits",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportFooter"
+  },
+  {
+    "id": "pref:reportDate",
+    "label": "Include report date",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportDate"
+  },
+  {
+    "id": "pref:reportBaseline",
+    "label": "Include current / proposed settings",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportBaseline"
+  },
+  {
+    "id": "pref:reportLimitations",
+    "label": "Include limitations",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportLimitations"
+  },
+  {
+    "id": "pref:reportMethods",
+    "label": "Include method",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportMethods"
+  },
+  {
+    "id": "pref:reportPageBreak",
+    "label": "Start report sections on new pages",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportPageBreak"
+  },
+  {
+    "id": "pref:reportAccent",
+    "label": "Use colour in the report",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportAccent"
+  },
+  {
+    "id": "pref:reportSummary",
+    "label": "Include plain-language summary",
+    "category": "Report options",
+    "type": "pref",
+    "key": "reportSummary"
+  },
+  {
+    "id": "pref:theme",
+    "label": "Colour atmosphere",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "theme"
+  },
+  {
+    "id": "pref:accent",
+    "label": "Accent palette",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "accent"
+  },
+  {
+    "id": "pref:fontSize",
+    "label": "Reading scale",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "fontSize"
+  },
+  {
+    "id": "pref:density",
+    "label": "Layout density",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "density"
+  },
+  {
+    "id": "pref:metricPrecision",
+    "label": "Number precision",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "metricPrecision"
+  },
+  {
+    "id": "pref:locale",
+    "label": "Date and number convention",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "locale"
+  },
+  {
+    "id": "pref:chartColor",
+    "label": "Timeline colour encoding",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartColor"
+  },
+  {
+    "id": "pref:chartSort",
+    "label": "Timeline ordering",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartSort"
+  },
+  {
+    "id": "pref:chartHeight",
+    "label": "Timeline row spacing",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "chartHeight"
+  },
+  {
+    "id": "pref:reportOrientation",
+    "label": "Print orientation",
+    "category": "Display and accessibility",
+    "type": "pref",
+    "key": "reportOrientation"
+  }
+]
