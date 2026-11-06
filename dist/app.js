@@ -1,4 +1,4 @@
-import { createLivingLab } from './living.js';
+import { createLivingLab } from './living.js?v=2.2.1';
 import {
   DAYS,
   GROUPS,
@@ -14,10 +14,10 @@ import {
   validateSharedSnapshot,
   parseCSV,
   csvEscape,
-} from './engine.js';
-import { templates, createRoom, defaultPrefs } from './data.js';
-import * as db from './db.js';
-import * as cloud from './cloud.js';
+} from './engine.js?v=2.2.1';
+import { templates, createRoom, defaultPrefs } from './data.js?v=2.2.1';
+import * as db from './db.js?v=2.2.1';
+import * as cloud from './cloud.js?v=2.2.1';
 const $ = (s) => document.querySelector(s),
   $$ = (s) => [...document.querySelectorAll(s)];
 const esc = (s) =>

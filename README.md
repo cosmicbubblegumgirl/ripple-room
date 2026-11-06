@@ -60,6 +60,8 @@ The engine tests cover transport deadlines, uninterrupted shared-resource alloca
 
 ## Hosting on GitHub Pages
 
+Before preparing a release, bump `package.json` and run `npm run version-assets`, then run the checks. The entry page, module imports, styles and offline cache use the same release version so cached files from an older release cannot be mixed into the new module graph.
+
 The `gh-pages` branch contains the contents of `dist/` at its root. In the repository settings, choose **Pages → Source → Deploy from a branch → gh-pages → / (root)**. Release updates must copy the verified `dist/` files to that branch. GitHub Pages serves the frontend; the database is hosted separately. The optional workflow can publish directly from `main` if Pages is later configured for GitHub Actions.
 
 All application assets use relative paths so the same build works at a project path such as `/ripple-room/`. There is no frontend build step, package installation or runtime server required.

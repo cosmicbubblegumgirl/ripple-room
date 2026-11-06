@@ -56,7 +56,11 @@ Ten additional regression tests cover proposal-relative stress losses, one-varia
 ### Timetable compromise search (2.2)
 
 The eighth laboratory lens searches closing-time and last-departure shifts in 15-minute steps, bounded by 90 minutes per setting and midnight. It evaluates at most 49 distinct combinations. Access targets use the model's evaluable visit denominator; unknown and estimated observations are reported separately. Optional preservation checks each resident-day already served by the proposal, so a larger weighted total cannot hide a newly excluded visit. Ranked results omit alternatives that use at least as much room and bus time for no better access and no fewer lost visits. Options are ordered by total minutes changed, number of changed fields, then access. This is a timetable ordering rule, not an inferred cost or a global optimum. Applying an option uses the existing mutation and undo path. The search itself does not change the room or its saved scenarios.
-Browser checks for this release covered target and time-limit changes, no-match messaging, applying a suggestion, and undo. The compromise view fits 320, 390 and 768 pixel frames and desktop. Seven new regression tests bring the suite to 42 passing tests.
+Browser checks for this release covered target and time-limit changes, no-match messaging, applying a suggestion, and undo. The compromise view fits 320, 390 and 768 pixel frames and desktop. Seven new search regressions and an offline resource graph check bring the suite to 43 passing tests.
+
+### Release cache consistency (2.2.1)
+
+Application entry scripts, styles, imports and offline cache entries carry the same package version. `scripts/version-assets.mjs` updates these references together; a regression check verifies the entire released resource graph exists and is precached. The service worker revalidates network responses while retaining offline fallbacks and the existing IndexedDB records. This addresses observed stale module loading after a successful Pages deployment.
 
 ## Known model limits
 
