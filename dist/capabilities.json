@@ -49,6 +49,13 @@
     "key": "living-replay"
   },
   {
+    "id": "action:living-compromise",
+    "label": "Find a compromise within timetable limits",
+    "category": "Living laboratory",
+    "type": "action",
+    "key": "living-compromise"
+  },
+  {
     "id": "action:new",
     "label": "Create a room",
     "category": "Workspace",

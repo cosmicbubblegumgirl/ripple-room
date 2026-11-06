@@ -1,6 +1,63 @@
 import { analyse, clamp, clock } from './engine.js';
 
 const copy = (x) => JSON.parse(JSON.stringify(x));
+
+// A bounded timetable search. Minutes are a transparent ordering rule, not cost.
+export function findCompromises(room, input = {}) {
+  const bounded = (value, fallback, max) =>
+    clamp(Number.isFinite(Number(value)) ? Number(value) : fallback, 0, max);
+  const limits = {
+    targetReach: bounded(input.targetReach, 80, 100),
+    closeMinutes: Math.floor(bounded(input.closeMinutes, 60, 90) / 15) * 15,
+    busMinutes: Math.floor(bounded(input.busMinutes, 60, 90) / 15) * 15,
+    protect: input.protect !== false,
+  };
+  const current = analyse(room.people, room.baseline, room.policy);
+  const protectedVisits = new Set(current.rows
+    .filter((row) => row.status === 'retained')
+    .map((row) => `${row.id}:${row.day}`));
+  const increments = (start, limit) => [...new Set(
+    Array.from({ length: limit / 15 + 1 }, (_, i) => Math.min(1440, start + i * 15)),
+  )];
+  const tested = [];
+  for (const close of increments(room.policy.close, limits.closeMinutes)) {
+    for (const lastBus of increments(room.policy.lastBus, limits.busMinutes)) {
+      const patch = {};
+      if (close !== room.policy.close) patch.close = close;
+      if (lastBus !== room.policy.lastBus) patch.lastBus = lastBus;
+      const policy = { ...room.policy, ...patch };
+      const result = analyse(room.people, room.baseline, policy);
+      const displaced = result.rows.filter((row) =>
+        protectedVisits.has(`${row.id}:${row.day}`) && row.status !== 'retained');
+      const lostFromProposal = displaced.reduce((sum, row) => sum + row.weight, 0);
+      const minutesChanged = close - room.policy.close + lastBus - room.policy.lastBus;
+      tested.push({
+        id: `compromise-${close}-${lastBus}`, patch, policy, result,
+        lostFromProposal, minutesChanged,
+        changes: Object.keys(patch).length,
+        meetsTarget: result.metrics.population > 0 && result.metrics.reach + 1e-9 >= limits.targetReach,
+        protected: displaced.length === 0,
+      });
+    }
+  }
+  const byEffort = (a, b) => a.minutesChanged - b.minutesChanged ||
+    a.changes - b.changes || b.result.metrics.reach - a.result.metrics.reach ||
+    a.policy.close - b.policy.close || a.policy.lastBus - b.policy.lastBus;
+  const admissible = tested.filter((trial) => !limits.protect || trial.protected);
+  const matches = admissible.filter((trial) => trial.meetsTarget).sort(byEffort);
+  const frontier = matches.filter((trial) => !matches.some((other) =>
+    other.policy.close <= trial.policy.close &&
+    other.policy.lastBus <= trial.policy.lastBus &&
+    other.result.metrics.reach >= trial.result.metrics.reach &&
+    other.lostFromProposal <= trial.lostFromProposal &&
+    (other.policy.close < trial.policy.close || other.policy.lastBus < trial.policy.lastBus ||
+      other.result.metrics.reach > trial.result.metrics.reach || other.lostFromProposal < trial.lostFromProposal)));
+  const closest = [...admissible].sort((a, b) =>
+    b.result.metrics.reach - a.result.metrics.reach || byEffort(a, b))[0] || null;
+  return { limits, current, tested: tested.length, matching: matches.length,
+    candidates: frontier.slice(0, 3), closest };
+}
+
 const changed = (policy, patch) =>
   Object.entries(patch).some(
     ([k, v]) => JSON.stringify(policy[k]) !== JSON.stringify(v),

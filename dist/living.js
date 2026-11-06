@@ -7,6 +7,7 @@ import {
   frameResult,
   storyFor,
   closingEdges,
+  findCompromises,
 } from './living-engine.js';
 const esc = (s) =>
   String(s ?? '').replace(
@@ -33,6 +34,7 @@ const modes = [
     'See the shape of a time squeeze.',
   ],
   ['replay', '07', 'Ripple Replay', 'Revisit a captured model run.'],
+  ['compromise', '08', 'Find a compromise', 'Set limits. Look for room.'],
 ];
 const button = (action, text, extra = '') =>
   `<button class="btn quiet" data-living="${action}" ${extra}>${text}</button>`;
@@ -59,6 +61,7 @@ export function createLivingLab({
     replay: 0,
     roomId: '',
     choices: [],
+    compromise: { targetReach: 80, closeMinutes: 60, busMinutes: 60, protect: true },
   };
   let r;
   const refresh = (focus) => {
@@ -137,6 +140,21 @@ export function createLivingLab({
             ];
     return `<div class="living-chapter"><span class="living-kicker">${intro[0]}</span><h3>${intro[1]}</h3><p>${intro[2]}</p></div>${kind === 'break' ? '<div class="break-stamp" aria-hidden="true">HANDLE WITH<br>REALITY</div>' : ''}<div class="branch-canvas ${kind === 'break' ? 'stress-canvas' : ''}"><div class="branch-origin"><span>YOUR PROPOSAL</span><b>${clock(room.policy.close)}</b><small>${n(r.metrics.served)} represented visits served</small></div><div class="branch-grid">${state.choices.map((c, i) => `<article class="branch-note"><span class="living-kicker">${kind === 'break' ? 'DISRUPTION' : 'POSSIBILITY'} / ${String(i + 1).padStart(2, '0')}</span><h4>${esc(c.title)}</h4><p>${esc(c.detail)}</p><div class="branch-impact"><strong>${kind === 'break' ? '−' + n(c.delta.metrics.lost) : (c.result.metrics.served - r.metrics.served >= 0 ? '+' : '') + n(c.result.metrics.served - r.metrics.served)}</strong><span>${kind === 'break' ? 'visits lose access<br>from this proposal' : 'net represented visits<br>versus this proposal'}</span></div><dl><div><dt>Access gained / lost</dt><dd>+${n(c.delta.metrics.gained)} / −${n(c.delta.metrics.lost)}</dd></div><div><dt>Total proposed access</dt><dd>${n(c.result.metrics.served)} / ${n(c.result.metrics.population)}</dd></div><div><dt>Unknown outcomes</dt><dd>${n(c.result.metrics.unknown)}</dd></div><div><dt>Operating cost Δ</dt><dd>R ${n(c.result.metrics.operatingCost - r.metrics.operatingCost)}</dd></div></dl>${button('apply', kind === 'break' ? 'Try this disruption ↗' : 'Try this branch ↗', `data-id="${c.id}"`)}</article>`).join('') || '<p>No further changes are available within the model’s input limits.</p>'}</div></div><p class="living-caveat">Operating costs use the supplied hourly estimate. New equipment, transport interventions and other unrecorded costs are excluded. Nothing changes in your live proposal until you choose a branch. Undo remains available.</p>`;
   }
+  function compromise(room) {
+    const search = findCompromises(room, state.compromise);
+    const choices = search.candidates;
+    state.choices = choices;
+    const select = (key, label, values, suffix) => `<label>${label}<select data-living-change="${key}" data-living-focus="${key}">${values.map((value) => `<option value="${value}" ${search.limits[key] === value ? 'selected' : ''}>${value}${suffix}</option>`).join('')}</select></label>`;
+    const unknown = search.current.metrics.unknown;
+    const estimated = search.current.metrics.estimated;
+    return `<div class="living-chapter"><span class="living-kicker">A LITTLE MORE ROOM. WITHIN YOUR LIMITS.</span><h3>Find the smallest<br>timetable shift.</h3><p>Choose what the room can give and what the last bus can give. Test them together against an access target.</p></div>
+      <div class="compromise-limits">${select('targetReach', 'Minimum modelled access', [50, 60, 70, 80, 90, 100], '%')}${select('closeMinutes', 'Allow room to close up to', [0, 15, 30, 45, 60, 90], ' minutes later')}${select('busMinutes', 'Allow last bus to leave up to', [0, 15, 30, 45, 60, 90], ' minutes later')}<label class="compromise-protect"><input type="checkbox" data-living-change="protect" data-living-focus="protect" ${search.limits.protect ? 'checked' : ''}><span>Keep access for everyone already served on each selected day</span></label></div>
+      <div class="compromise-summary" role="status"><strong>${search.matching ? `${search.matching} combinations meet your limits.` : 'No combination meets every limit.'}</strong><span>${search.tested} distinct combinations checked in 15-minute steps. Current modelled access: ${n(search.current.metrics.reach)}%.</span></div>
+      ${unknown || estimated ? `<p class="compromise-unknown">${unknown ? `${n(unknown)} resident-day observations remain unknown and are outside the access denominator. ` : ''}${estimated ? `${n(estimated)} observations use the fallback estimates already enabled in this room. ` : ''}An access target describes the supplied, evaluable sample.</p>` : ''}
+      <div class="compromise-results">${choices.map((c, i) => `<article class="branch-note compromise-note"><span class="living-kicker">${c.changes ? `OPTION ${i + 1} / ${n(c.minutesChanged)} TOTAL MINUTES CHANGED` : 'YOUR PROPOSAL ALREADY MEETS THE TARGET'}</span><h4>${c.changes ? `${n(c.result.metrics.reach)}% have room.` : 'Keep this version.'}</h4><dl><div><dt>Room closing</dt><dd>${clock(room.policy.close)} → ${clock(c.policy.close)}</dd></div><div><dt>Last bus departure</dt><dd>${clock(room.policy.lastBus)} → ${clock(c.policy.lastBus)}</dd></div><div><dt>Represented visits served</dt><dd>${n(c.result.metrics.served)} / ${n(c.result.metrics.population)}</dd></div><div><dt>Access lost from this proposal</dt><dd>${n(c.lostFromProposal)}</dd></div><div><dt>Operating cost Δ</dt><dd>R ${n(c.result.metrics.operatingCost - search.current.metrics.operatingCost)}</dd></div></dl>${c.changes ? button('apply', 'Try this compromise ↗', `data-id="${c.id}"`) : '<p class="compromise-kept">No change needed within these model assumptions.</p>'}</article>`).join('')}</div>
+      ${!choices.length ? `<div class="living-empty">${search.current.metrics.population === 0 ? 'No evaluable visits are available. Add availability or select days with resident observations before searching.' : `The highest access within these limits${search.limits.protect ? ' while preserving existing access' : ''} is ${n(search.closest?.result.metrics.reach || 0)}%. Try wider time limits, or inspect barriers such as capacity, access needs and missing availability.`}</div>` : ''}
+      <p class="living-caveat">Options that use more time without improving access are omitted. Remaining options are ordered by fewest total minutes changed, then fewer settings changed, then higher modelled access. Room and bus minutes are added for ordering only; they do not have equal costs. Only closing time and last departure change. Travel, safety buffers, days, resources and other assumptions remain fixed. Operating costs use the supplied rate; transport intervention costs are not included. These are bounded model comparisons, not a global optimum or a guarantee that a service change is possible.</p>`;
+  }
   function constellation(room) {
     const rows = r.rows.slice(0, 80);
     const complete = rows.filter((p) => p.complete),
@@ -173,6 +191,7 @@ export function createLivingLab({
       state.person = '';
       state.day = '';
       state.replay = 0;
+      state.compromise = { targetReach: 80, closeMinutes: 60, busMinutes: 60, protect: true };
     }
     r = analyse(room.people, room.baseline, room.policy);
     const meta = modes.find((m) => m[0] === state.mode),
@@ -183,6 +202,8 @@ export function createLivingLab({
             ? follow(room)
             : state.mode === 'constellation'
               ? constellation(room)
+              : state.mode === 'compromise'
+                ? compromise(room)
               : state.mode === 'replay'
                 ? replay(room)
                 : choiceCards(room, state.mode);
@@ -245,6 +266,8 @@ export function createLivingLab({
     if (!key) return false;
     if (key === 'person') state.person = target.value;
     if (key === 'day') state.day = target.value;
+    if (Object.hasOwn(state.compromise, key))
+      state.compromise[key] = key === 'protect' ? target.checked : Number(target.value);
     refresh(key);
     return true;
   }

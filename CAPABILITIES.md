@@ -1,6 +1,6 @@
 # Inside Ripple Room
 
-288 documented tools, controls and analytic measures. These are individually addressable in the in-app inventory. This count includes analytic measures and settings; it is not a claim that each is a separate product module.
+289 documented tools, controls and analytic measures. These are individually addressable in the in-app inventory. This count includes analytic measures and settings; it is not a claim that each is a separate product module.
 
 ## Living laboratory
 
@@ -13,6 +13,7 @@
 | Break this decision with explicit disruptions | `action:living-break` |
 | Explore constraint constellations | `action:living-constellation` |
 | Replay captured model runs | `action:living-replay` |
+| Find a compromise within timetable limits | `action:living-compromise` |
 
 ## Workspace
 

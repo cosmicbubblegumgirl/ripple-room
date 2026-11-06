@@ -1406,6 +1406,7 @@ const actionsList = [
     'Living laboratory',
   ],
   ['living-replay', 'Replay captured model runs', 'Living laboratory'],
+  ['living-compromise', 'Find a compromise within timetable limits', 'Living laboratory'],
 
   ['new', 'Create a room', 'Workspace'],
   ['new-empty', 'Start an empty room', 'Workspace'],
@@ -1559,6 +1560,7 @@ async function performAction(action, d = {}) {
     case 'living-break':
     case 'living-constellation':
     case 'living-replay':
+    case 'living-compromise':
       livingLab.open(action.slice(7));
       switchView('living');
       closeDialog();

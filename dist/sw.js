@@ -1,4 +1,4 @@
-const CACHE = 'ripple-room-v2.1.0';
+const CACHE = 'ripple-room-v2.2.0';
 const ASSETS = [
   './',
   './index.html',

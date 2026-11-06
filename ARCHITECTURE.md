@@ -41,6 +41,7 @@ Shared snapshot links contain a bounded, encoded aggregate report. They do not c
 - Engine and validation regression tests with Node's test runner.
 - Browser checks for live closing-time changes, scenario capture/comparison, resident creation/search, alternatives and decision brief rendering.
 - Responsive checks across the core workspace views, plus all seven living-laboratory lenses at 320, 390 and 768 pixel frame widths and on desktop.
+
 - The opening closing-time slider updates the workbench and individual consequence slips together.
 - Duplicate DOM identifier check.
 - Database transaction check: owner read succeeds, cross-owner read is denied, and the disposable test record is rolled back.
@@ -51,6 +52,11 @@ Password-based sign-in and cloud saving are implemented with the connected provi
 ## Living laboratory checks
 
 Ten additional regression tests cover proposal-relative stress losses, one-variable trials, resource bottlenecks, baseline comparability, immutable captured replays, unknown time margins, bounded closing-time studies, escaped aliases finite template outcomes and explicitly labelled fallback estimates. Laboratory interactions share the existing undo and persistence routes. Browser verification confirmed that a 17:00 captured frame remained at 17:00 while the live proposal moved to 17:15; Undo restored the proposal and removed the disposable snapshot. Private model receipts include captured profiles and are explicitly labelled before export.
+
+### Timetable compromise search (2.2)
+
+The eighth laboratory lens searches closing-time and last-departure shifts in 15-minute steps, bounded by 90 minutes per setting and midnight. It evaluates at most 49 distinct combinations. Access targets use the model's evaluable visit denominator; unknown and estimated observations are reported separately. Optional preservation checks each resident-day already served by the proposal, so a larger weighted total cannot hide a newly excluded visit. Ranked results omit alternatives that use at least as much room and bus time for no better access and no fewer lost visits. Options are ordered by total minutes changed, number of changed fields, then access. This is a timetable ordering rule, not an inferred cost or a global optimum. Applying an option uses the existing mutation and undo path. The search itself does not change the room or its saved scenarios.
+Browser checks for this release covered target and time-limit changes, no-match messaging, applying a suggestion, and undo. The compromise view fits 320, 390 and 768 pixel frames and desktop. Seven new regression tests bring the suite to 42 passing tests.
 
 ## Known model limits
 

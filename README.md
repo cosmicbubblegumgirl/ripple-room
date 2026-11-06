@@ -23,7 +23,7 @@ The in-app **Inside the room** inventory documents more than 240 working tools, 
 
 ## The living laboratory
 
-Seven connected lenses use the same inspectable scheduling engine:
+Eight connected lenses use the same inspectable scheduling engine:
 
 - **Who disappears?** separates newly lost access, existing exclusions, unknowns and gains.
 - **Follow one person** reads current and proposed versions of the same supplied day.
@@ -32,6 +32,7 @@ Seven connected lenses use the same inspectable scheduling engine:
 - **Break this decision** compares explicit disruptions against the proposal without counting its existing losses twice.
 - **Constraint constellations** plots effective arrival against session time margin, with keyboard and list access to the underlying residents.
 - **Ripple Replay** revisits captured cohorts and assumptions, studies nearby closing-time thresholds and exports a private model receipt.
+- **Find a compromise** searches combined closing-time and last-bus shifts in 15-minute steps. Set an access target and time limits, preserve every resident-day already served by the proposal, and try an alternative with undo. Ranking uses total minutes changed rather than an inferred monetary cost. Missing availability remains visible.
 
 These are deterministic comparisons, not attendance forecasts or observed post-implementation outcomes. Trials use supplied operating costs and do not infer equipment or intervention costs. The 900-item expansion brief is a roadmap, not a claim about implemented features.
 
@@ -59,7 +60,7 @@ The engine tests cover transport deadlines, uninterrupted shared-resource alloca
 
 ## Hosting on GitHub Pages
 
-The included workflow publishes `dist/` on pushes to `main`. In the repository settings, choose **Pages → Source → GitHub Actions**. GitHub Pages serves the frontend; the database is hosted separately.
+The `gh-pages` branch contains the contents of `dist/` at its root. In the repository settings, choose **Pages → Source → Deploy from a branch → gh-pages → / (root)**. Release updates must copy the verified `dist/` files to that branch. GitHub Pages serves the frontend; the database is hosted separately. The optional workflow can publish directly from `main` if Pages is later configured for GitHub Actions.
 
 All application assets use relative paths so the same build works at a project path such as `/ripple-room/`. There is no frontend build step, package installation or runtime server required.
 
