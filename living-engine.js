@@ -1,4 +1,4 @@
-import { analyse, clamp, clock } from './engine.js';
+import { analyse, clamp, clock } from './engine.js?v=2.2.1';
 
 const copy = (x) => JSON.parse(JSON.stringify(x));
 

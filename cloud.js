@@ -1,4 +1,4 @@
-import { CLOUD_URL, CLOUD_KEY } from './config.js';
+import { CLOUD_URL, CLOUD_KEY } from './config.js?v=2.2.1';
 let client;
 export function getClient() {
   if (!client) {

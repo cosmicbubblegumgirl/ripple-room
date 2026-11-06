@@ -1,24 +1,24 @@
-const CACHE = 'ripple-room-v2.2.0';
+const CACHE = 'ripple-room-v2.2.1';
 const ASSETS = [
   './',
   './index.html',
-  './styles.css',
-  './studio.css',
-  './living.css',
-  './living.js',
-  './living-engine.js',
-  './app.js',
-  './engine.js',
-  './data.js',
-  './db.js',
-  './cloud.js',
-  './config.js',
+  './styles.css?v=2.2.1',
+  './studio.css?v=2.2.1',
+  './living.css?v=2.2.1',
+  './living.js?v=2.2.1',
+  './living-engine.js?v=2.2.1',
+  './app.js?v=2.2.1',
+  './engine.js?v=2.2.1',
+  './data.js?v=2.2.1',
+  './db.js?v=2.2.1',
+  './cloud.js?v=2.2.1',
+  './config.js?v=2.2.1',
   './icon.svg',
   './icon-180.png',
   './icon-192.png',
   './icon-512.png',
   './manifest.webmanifest',
-  './vendor/supabase.js',
+  './vendor/supabase.js?v=2.2.1',
   './fonts/type-713ca32c3c.woff2',
   './fonts/type-1a551706a8.woff2',
 ];
@@ -44,7 +44,7 @@ self.addEventListener('fetch', (e) => {
   const u = new URL(e.request.url);
   if (e.request.method !== 'GET' || u.origin !== self.location.origin) return;
   e.respondWith(
-    fetch(e.request)
+    fetch(e.request, { cache: 'no-cache' })
       .then((r) => {
         if (r.ok) {
           const copy = r.clone();

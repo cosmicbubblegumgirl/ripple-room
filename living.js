@@ -1,4 +1,4 @@
-import { analyse, clock } from './engine.js';
+import { analyse, clock } from './engine.js?v=2.2.1';
 import {
   multiverse,
   tinyChanges,
@@ -8,7 +8,7 @@ import {
   storyFor,
   closingEdges,
   findCompromises,
-} from './living-engine.js';
+} from './living-engine.js?v=2.2.1';
 const esc = (s) =>
   String(s ?? '').replace(
     /[&<>"']/g,
